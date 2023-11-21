@@ -4,6 +4,7 @@ import { Container, Row } from 'react-bootstrap'
 import { Box } from '@chakra-ui/react'
 import axios from 'axios'
 import { Card, CardHeader, CardBody, CardFooter,Stack, Heading, Divider,Button, Image, Text, Grid} from '@chakra-ui/react'
+import './../../Module.css'
 function Wishlist({fav, setFav}) {
  
 
@@ -13,6 +14,7 @@ function Wishlist({fav, setFav}) {
 
     return (
    <>
+
       <Container
         style={{
           display: "flex",

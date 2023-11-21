@@ -4,6 +4,7 @@ import { Container,Row } from 'react-bootstrap'
 import { Box } from '@chakra-ui/react'
 import axios from 'axios'
 import { Card, CardHeader, CardBody, CardFooter,Stack, Heading, Divider,Button, Image, Text, Grid} from '@chakra-ui/react'
+import './../../Module.css'
 
 function Cart({cart,setCart}) {
   if(!cart.length){
@@ -11,7 +12,6 @@ function Cart({cart,setCart}) {
   }
   return (
   <>
-
 <Container
         style={{
           display: "flex",
@@ -39,12 +39,10 @@ function Cart({cart,setCart}) {
                 </CardBody>
                 <Divider />
                <Button data-id={product.id} onClick={(e)=>{
-               let deletecheck = cart.includes(e.target.getAttribute('data-id'))
+                let updatedCart = cart.filter((elem) => elem.id !== e.target.getAttribute('data-id'))
                
-                let deleted = cart.find((cart) => cart != e.target.getAttribute("data-id"))
-               
-               setCart(deleted)
-               console.log(deleted);
+               setCart(updatedCart)
+               console.log(updatedCart  );
                }}> Remove</Button>
               </Card>
             </Box>

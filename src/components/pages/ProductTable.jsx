@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Button, FormControl } from '@chakra-ui/react'
 import Register from './Register'
+import './../../Module.css'
 
 import {
     Table,
@@ -45,6 +46,7 @@ console.log(fav)
 
   return (
     <>
+    
     <TableContainer>
     <Table variant='simple'>
       <TableCaption>Products</TableCaption>

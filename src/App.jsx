@@ -11,7 +11,7 @@ import Register from "./components/pages/Register";
 import Wishlist from "./components/pages/Wishlist";
 import Cart from "./components/pages/Cart";
 import ProductTable from "./components/pages/ProductTable";
-
+import './Module.css'
 function App() {
   let [login, setLogin] = useState(true);
   let [cardproducts, setCardProducts] = useState(false);
@@ -40,7 +40,7 @@ function App() {
                   login ? (
                     <MyProducts fav={fav} setFav={setFav} cart={cart} setCart={setCart} login={login} setLogin={setLogin} />
                   ) : (
-                    <Login setLogin={setLogin} setCardProducts={setCardProducts} />
+                    <Login setLogin={setLogin} login={login} setCardProducts={setCardProducts} />
                   )
                 }
               />

@@ -1,0 +1,41 @@
+.salebutton{
+    color:white ;
+    background:green;
+    width:60px;
+    position: absolute;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(222, 241, 195);
+  align-items: center;
+
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.favicon{
+    margin-right: 15px;
+}
+
+.carticon{
+    margin-right: 15px;
+}
+
+.searchInput{
+    display: flex;
+    align-items: center;
+}
+.navigationList{
+    display: flex;
+ 
+ 
+}
+   
+li{
+    list-style: none;
+  margin-right: 10px;
+}

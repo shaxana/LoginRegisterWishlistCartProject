@@ -17,7 +17,10 @@ import {
 import { v4 as uuidv4 } from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { wrap } from "framer-motion";
-import './../../style.css'
+import './../../Module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
 
 function MyProducts({ cardproducts, setCardProducts, fav, setFav, cart, setCart}) {
   const [products, setProducts] = useState([]);
@@ -100,7 +103,7 @@ function MyProducts({ cardproducts, setCardProducts, fav, setFav, cart, setCart}
                      }
                     }}
                     >
-                      Add to Favorite
+                      Add to Favorite <FontAwesomeIcon icon={faHeart} />
                     </Button>
                     
                   </ButtonGroup>

@@ -10,6 +10,8 @@ import {
   import { Button, ButtonGroup } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import './../../Module.css'
+ 
 
 function Register({register, setRegister}) {
 let [newUser, setNewUser] = useState({name:'', email:'', pass:''})
